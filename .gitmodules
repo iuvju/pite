@@ -1,3 +1,3 @@
-[submodule "skrollr"]
-	path = skrollr
-	url = git@github.com:spricity/skrollr.git
+[submodule "lib/juskroll"]
+	path = lib/juskroll
+	url = git@github.com:iuvju/juskroll.git

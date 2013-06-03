@@ -41,7 +41,8 @@ PITE(皮特) 小组：Professional(专业)、Innovation(创新)、Technology(技
 	4、文章：                      IUV blog
 	5、月报：                      进度及现有产出
 ##五、交流
-	github地址：https://github.com/IUVtaobao/HTML5旺旺群：1234579483
+	github地址：https://github.com/iuvju/pite
+	旺旺群：1234579483
 	会议
 		原则：
 			1、小组，两周一次
@@ -56,7 +57,9 @@ PITE(皮特) 小组：Professional(专业)、Innovation(创新)、Technology(技
 			3、review && action
 	分享：周会、懒懒…
 ##六、成员 
+
 ```
+@小连 @
 大家群策群力，让我们走在最新的技术前沿，让聚划算一直向前冲。
 那么，以下两个问题，
 
