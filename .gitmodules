@@ -1,0 +1,3 @@
+[submodule "skrollr"]
+	path = skrollr
+	url = git@github.com:spricity/skrollr.git
