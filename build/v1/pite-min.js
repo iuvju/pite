@@ -1,0 +1,2 @@
+/* JBC build, 2013-07-08 4:15:27 PM */
+KISSY.add("K",function(){function a(){return this}return a.prototype.object_key=function(){return Object.keys||(Object.keys=function(a){if(a!==Object(a))throw new TypeError("Object.keys called on a non-object");var b,c=[];for(b in a)Object.prototype.hasOwnProperty.call(a,b)&&c.push(b);return c}),Object.keys},a}),KISSY.add("jbc/pite/v1/pite",function(a,b){var c=function(){},d=new b;return c.prototype=a.mix(c.prototype,d),c},{requires:["./mods/func"]});

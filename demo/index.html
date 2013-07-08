@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jupite - JBC Demo</title>
+    <link rel="stylesheet" href="http://l.tbcdn.cn//apps/juassets/??apps/menu-2013/global.css,widgets/act/ju-act.css,apps/menu-2013/top.css,apps/menu-2013/nav.css,apps/menu-2013/foot.css,apps/menu-2013/media.css,apps/list-2013/itemlist.css,apps/list-2013/filter.css?t=20130605.css" />
+	<script src="http://l.tbcdn.cn/??s/kissy/1.2.0/kissy-min.js,apps/juassets/config.js"></script>
+  </head>
+<body>
+
+
+
+
+
+<script>
+// JBC demo script
+(function(S){
+	if (S.Config.debug) {
+		S.Config.mappedRules = [];//清空之前的map
+		S.config({
+			packages: [{
+			   name: 'jbc',
+			   path: '../../'//本地路径
+			}],
+			map: [
+				[/(.+)jbc\/(\w*)\/(.+)/g,"$1$2/src/$3"]
+			]
+		});
+	}
+})(KISSY);
+
+
+
+//Jupicker Example
+KISSY.use('jbc/pite/v1/pite',function(S, Jupicker){
+
+});
+</script>
+</body>
+</html>
