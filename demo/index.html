@@ -4,23 +4,23 @@
     <meta charset="utf-8" />
     <title>Jupite - JBC Demo</title>
     <link rel="stylesheet" href="http://l.tbcdn.cn//apps/juassets/??apps/menu-2013/global.css,widgets/act/ju-act.css,apps/menu-2013/top.css,apps/menu-2013/nav.css,apps/menu-2013/foot.css,apps/menu-2013/media.css,apps/list-2013/itemlist.css,apps/list-2013/filter.css?t=20130605.css" />
-	<script src="http://l.tbcdn.cn/??s/kissy/1.2.0/kissy-min.js,apps/juassets/config.js"></script>
+	<script src="http://l.tbcdn.cn/??s/kissy/1.3.0/kissy-min.js,apps/juassets/config.js"></script>
   </head>
 <body>
 
 
-
+<h1>Welcome Pite</h1>
 
 
 <script>
-// JBC demo script
-(function(S){
+
+;(function(S){
 	if (S.Config.debug) {
 		S.Config.mappedRules = [];//清空之前的map
 		S.config({
 			packages: [{
 			   name: 'jbc',
-			   path: '../../'//本地路径
+			   path: 'http://10.13.105.197/fe'//本地路径
 			}],
 			map: [
 				[/(.+)jbc\/(\w*)\/(.+)/g,"$1$2/src/$3"]
@@ -28,13 +28,20 @@
 		});
 	}
 })(KISSY);
-
-
-
-//Jupicker Example
-KISSY.use('jbc/pite/v1/pite',function(S, Jupicker){
-
+</script>
+<h2>Core函数</h2>
+<script>
+KISSY.use('jbc/pite/v1/pite',function(S, P){
+	P.require(['core'], function(S, core){
+		var logs = core.debounce(function(){
+			log(1);
+		}, 1000);
+		logs();
+	});
+	
+	
 });
+
 </script>
 </body>
 </html>
