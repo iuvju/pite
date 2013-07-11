@@ -37,13 +37,20 @@
 	if(!$img_url){
 		$img_url = _p('img');
 	}
-	if($img_url){
-
+	if(!$img_url){
+		$flag = false;
+	}else{
+		$flag = true;
 		if(check_remote_file_exists($img_url)){
 			$data_uri = getDataURI($img_url);
 		}else{
 			$error = '图片不存在，请检查您的图片地址';
+			$flag = false;
 		}
+
+		//print_r(file_get_contents($img_url));
+
+		// $data_uri = getDataURI($img_url);
 	}
 	function getDataURI($image, $mime = '') {
 		return 'data: '.(function_exists('mime_content_type') ? mime_content_type($image) : $mime).';base64,'.base64_encode(file_get_contents($image));
@@ -101,7 +108,7 @@
 		<input type="text" value="" name="img" class="txt" />
 		<input type="submit" class="act" value="提交">
 	</form>
-	<?php if($error):?>
+	<?php if(!$flag):?>
 		<p class="error"><?php echo $error?></p>
 	<?php else:?>
 		<p class="img"><img src="<?php echo $data_uri?>"></p>
