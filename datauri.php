@@ -37,19 +37,13 @@
 	if(!$img_url){
 		$img_url = _p('img');
 	}
-	if(!$img_url){
-		$error = 'URL参数不对';
-	}else{
+	if($img_url){
 
 		if(check_remote_file_exists($img_url)){
 			$data_uri = getDataURI($img_url);
 		}else{
 			$error = '图片不存在，请检查您的图片地址';
 		}
-
-		//print_r(file_get_contents($img_url));
-
-		// $data_uri = getDataURI($img_url);
 	}
 	function getDataURI($image, $mime = '') {
 		return 'data: '.(function_exists('mime_content_type') ? mime_content_type($image) : $mime).';base64,'.base64_encode(file_get_contents($image));
