@@ -108,11 +108,11 @@
 		<input type="submit" class="act" value="提交">
 	</form>
 	<?php if($error):?>
-		<p class="error"><?=$error?></p>
+		<p class="error"><?php echo $error?></p>
 	<?php else:?>
-		<p class="img"><img src="<?=$data_uri?>"></p>
-		<p class="target">原图地址： <a href="<?=$img_url?>" target="_blank"><?=$img_url?></a>
-		<textarea><?=$data_uri?></textarea>
+		<p class="img"><img src="<?php echo $data_uri?>"></p>
+		<p class="target">原图地址： <a href="<?php echo $img_url?>" target="_blank"><?php echo $img_url?></a>
+		<textarea><?php echo $data_uri?></textarea>
 	<?php endif?>
 </body>
 </html>
