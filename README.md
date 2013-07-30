@@ -1,5 +1,7 @@
 #PITE 小组2013章程（beta）
 
+最新进展 http://iuvju.github.io/pite/
+
 
 PITE(皮特) 小组：Professional(专业)、Innovation(创新)、Technology(技术)、Experience(体验)
 
