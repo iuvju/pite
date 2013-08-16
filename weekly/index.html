@@ -36,11 +36,12 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section data-background="url(http://img02.taobaocdn.com/tps/i2/T1nRSjFb4cXXcVUG_.-1920-1400.png)">
 					<h1>创新体验小组</h1>
+                    <br><br>
 					<h3>Professional、Innovation、Technology、Experience</h3>
 					<p>
-						<small><a href="javascript:;">@崎轩</a> / <a href="javascript:;">@小连</a> / <a href="javascript:;">@潇方</a> / <a href="javascript:;">@王吉</a> / <a href="javascript:;">@应离</a></small>
+						<small><a href="javascript:;">@崎轩</a> / <a href="javascript:;">@小连</a> / <a href="javascript:;">@潇方</a> / <a href="javascript:;">@王吉</a> / <a href="javascript:;">@应离</a> / <a href="javascript:;">@周建林</a></small>
 					</p>
 				</section>
 
@@ -53,39 +54,90 @@
 						<p>支持无缝滚动</p>
                         <a href="http://act.ju.taobao.com/go/act/taobao-decennial.php#p=luxury" target="_blank">淘宝十周年</a>
                         <a href="http://act.ju.taobao.com/go/act/pre-juchina.php?spm=0.0.0.0.TohGJf" target="_blank">青红巴蜀</a>
-                        <img src="http://img04.taobaocdn.com/tps/i4/T1Evd7FadiXXXP7wYE-821-592.jpg" />
+ 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+<script type="text/javascript">
+    var s1 = skrollr.init({
+        container: 'pannel1',
+        beforerender: function(data) {
+            //console.log('beforerender');
+        },
+        render: function() {
+            //console.log('render');
+        },
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
+    var s2 = new JuSkroll({
+        container: 'pannel2',
+        beforerender: function(data) {
+            //console.log('beforerender');
+        },
+        render: function() {
+            //console.log('render');
+        },
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
+    $("#stop").on("click", function(){
+        s1.pause();
+    });
+    $("#resume").on("click", function(){
+        s2.resume();
+    });
+
+    or
+
+    $("#stop").on("click", function(){
+        s2.pause();
+    });
+    $("#resume").on("click", function(){
+        s2.resume();
+    });
+</script>
+                    </code></pre>
+
                     </section>
                     <section>
                         <h2>数据魔方</h2>
                         <p>运营想怎么玩魔方就怎么玩</p>
-                        <p>
-                            <img src="http://img04.taobaocdn.com/tps/i4/T1tuijFiRdXXXoPz2y-997-683.jpg" />
-                            <a href="http://act.ju.taobao.com/go/act/new-winter.php" target="_blank">淘宝十周年</a>
-                        </p>
-                    </section>
-                    <section>
+                        <br><br>
                         <h2>618活动</h2>
                         <p>效果：如hover、旋转等</p>
-                        <p>
-
-                            <a href="http://act.ju.taobao.com/go/act/618-jusale-index.php" target="_blank">
-                            <img src="http://img01.taobaocdn.com/tps/i1/T1BTWhFbhgXXcTNiTn-251-124.jpg" />
-                            </a>
-                        </p>
+                        <aside class="notes">
+                            <p>
+                                <img src="http://img04.taobaocdn.com/tps/i4/T1tuijFiRdXXXoPz2y-997-683.jpg" />
+                                <a href="http://act.ju.taobao.com/go/act/new-winter.php" target="_blank">淘宝十周年</a>
+                            </p>
+                            <p>
+                                <a href="http://act.ju.taobao.com/go/act/618-jusale-index.php" target="_blank">
+                                    <img src="http://img01.taobaocdn.com/tps/i1/T1BTWhFbhgXXcTNiTn-251-124.jpg" />
+                                </a>
+                            </p>
+                        </aside>
                     </section>
                     <section>
                         <h2>非常规活动总结</h2>
+                        <br>
+                        <p>沉淀与产出：<a href="https://github.com/iuvju/pite" target="_target">文档与代码库</a></p>
+                        <br>
                         <ul>
                             <li>非常规，但也不是变化的特别离谱</li>
                             <li>可以做代码沉淀</li>
                             <li>代码片段（包括对应的HTML\CSS\JavaScript）</li>
                             <li>提升开发的效率</li>
                         </ul>
+                        <pre><code>
+状态：进行中
+                        </code></pre>
                     </section>
-
-					<aside class="notes">
-						按住s显示提示内容
-					</aside>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -93,11 +145,6 @@
 					<section>
 						<h2>微创新微应用</h2>
 					</section>
-                    <section>
-                        <h2>TMS插件</h2>
-                        <p>帮助运营和前端开发快速查找页面上的TMS编辑地址</p>
-                        <a href="https://chrome.google.com/webstore/detail/ju-tms-hook/fkgjlibdfchkhdhblnhchnnnomffifcf" target="_blank">下载</a>
-                    </section>
 
                     <section>
                         <h2>小图片使用data-uri</h2>
@@ -106,15 +153,22 @@
                         <p>例子：
                             <a href="http://ju.taobao.com/tg/ding_zhi.htm" target="_blank">聚定制</a>
                         </p>
-                        <p>
+                        <p>产出：
                             <a href="http://iuv.taobao.net/git/jupite/demo/datauri.php" target="_blank">转换工具</a>
                         </p>
+                        <pre><code>
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFW…AC50ECQPyPSfEH+z6+bEOQAAiAjWIR4+OZgSwAAgABBgDxZhRp4DX13QAAAABJRU5ErkJggg==) no-repeat right 0;
+状态：投入使用
+                        </code></pre>
                     </section>
 					<section>
 						<h2>定投系统</h2>
 						<p>定投系统是统一管理页面资源位投放的系统，集活动申请、审核、排期和日常维护于一体的运营推广平台</p>
-						<p><a href="http://iuv.tabobao.net/git/dingtou" target="_blank">Demo地址</a> \ <a href="https://drive.google.com/#folders/0B-_-vBh39J5AY1ZtU1Myd3A4N0k">文档</a></p>
-                        <img src="http://img01.taobaocdn.com/tps/i1/T1XgiiFcBfXXXJqVkE-645-507.jpg"/>
+						<p>产出：<a href="http://iuv.tabobao.net/git/dingtou" target="_blank">Demo地址</a> \ <a href="https://drive.google.com/#folders/0B-_-vBh39J5AY1ZtU1Myd3A4N0k">文档</a></p>
+                        <img src="http://img01.taobaocdn.com/tps/i1/T1XgiiFcBfXXXJqVkE-645-507.jpg" height="300"/>
+                        <pre><code>
+状态：开发中
+                    </code></pre>
 					</section>
 					<section>
 						<h2>我的淘宝应用</h2>
@@ -122,8 +176,10 @@
 						<a class="test" href="http://cornify.com">
 							<img src="http://img03.taobaocdn.com/tps/i3/T1KCWkFh8aXXchvOcc-279-182.png" />
 						</a>
+                        <pre><code>
+状态：进行中
+                        </code></pre>
 					</section>
-
 				</section>
 
 				<section data-background="#30283A">
@@ -139,23 +195,37 @@
 							<li>未来两周创意方案</li>
 							<li>需要创意方案与设计</li>
 						</ul>
-					</section>
+<pre><code>
+状态：本周启动
 
+</code></pre>
+					</section>
 					<section>
 						<h2>活动页面响应式设计</h2>
 						<p>让手机、PAD也可以很好的使用聚划算的活动页面</p>
-					</section>
-
-					<section>
 						<h2>UED招聘</h2>
-						<p></p>
+						<p>设计一些有趣的场景，供应聘者玩耍</p>
+                        <h3>浏览器升级</h3>
+
 					</section>
 
 				</section>
 
-				<section>
+                <section data-background="#8c4738" data-background-transition="slide">
+                    <h1>规划与总结</h1>
+                    <br>
+                    <ol>
+                        <li>代码片段 (动画等)，提升开发效率 <a>崎轩、小连</a></li>
+                        <li>定投系统 <a>崎轩</a></li>
+                        <li>中秋大放送 <a>潇方</a></li>
+                        <li>活动页面响应式 <a>小连</a></li>
+                    </ol>
+                </section>
+
+				<section data-background="url(http://img02.taobaocdn.com/tps/i2/T1nRSjFb4cXXcVUG_.-1920-1400.png)">
 					<h1>THE END</h1>
-					<h3>BY 崎轩</h3>
+                    <br><br>
+					<h3>BY 崎轩 2013-8-16</h3>
 				</section>
 
 			</div>
